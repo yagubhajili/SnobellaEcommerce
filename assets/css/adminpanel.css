@@ -1,0 +1,16 @@
+.modalcss{
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.links{
+    display: flex;
+    gap: 50px;
+}
+.homelink{
+    color: rgb(73, 73, 255);
+    text-decoration: none;
+}
+.adminlink{
+color: orange;
+}

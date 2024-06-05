@@ -1,0 +1,236 @@
+body {
+  .container {
+    max-width: 1128px;
+    margin: 0 auto;
+
+    .options {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      button {
+        background-color: white;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        &:hover {
+          opacity: 0.9;
+          scale: 1.1;
+        }
+      }
+      .searchBtn {
+        padding: 10px 15px;
+      }
+      .left-options {
+        .a-z {
+          padding: 10px 15px;
+        }
+
+        .z-a {
+          padding: 10px 15px;
+        }
+      }
+
+      .SearchProd {
+        border: none;
+        background-color: #f9f9f9;
+        padding: 10px 15px;
+        border-radius: 8px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .right-options {
+        .high-low {
+          padding: 10px 15px;
+        }
+
+        .low-high {
+          padding: 10px 15px;
+        }
+      }
+    }
+  }
+}
+
+.producttop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 32px;
+
+  h3 {
+    font-size: 32px;
+    line-height: 54.4px;
+  }
+
+  p {
+    img {
+      margin-left: 8px;
+    }
+  }
+}
+
+.products {
+  .rightBox {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+
+    .item {
+      padding: 28px 24px;
+      height: 508px;
+      width: 360px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+
+      justify-content: center;
+      position: relative;
+
+      .bag {
+        width: 218px;
+        height: 243px;
+        margin-left: 71px;
+      }
+
+      .close {
+        position: absolute;
+        height: 32px;
+        width: 32px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 2%;
+        left: 90%;
+      }
+
+      .stars {
+        margin-left: 24px;
+        margin-bottom: 16px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .price {
+        display: flex;
+        align-items: center;
+        margin-left: 24px;
+        gap: 18px;
+        margin-top: 16px;
+
+        h4 {
+          color: #f75145;
+        }
+
+        p {
+          color: #363636;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 1128px;
+    margin: 0 auto;
+
+    .producttop {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 16px;
+      margin-bottom: 32px;
+
+      h3 {
+        font-size: 32px;
+        line-height: 54.4px;
+      }
+    }
+
+    .productcards {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 508px;
+      justify-content: space-between;
+      padding: 0 50px;
+
+      .card {
+        border-radius: 8px;
+        background-color: #f9f9f9;
+
+        max-width: 360px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        margin: 20px auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .producttoptwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 32px;
+
+    h3 {
+      font-size: 32px;
+    }
+  }
+
+  .productcards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 508px;
+    justify-content: space-between;
+    padding: 0 50px;
+
+    .cardtwo {
+      border-radius: 8px;
+      background-color: #f9f9f9;
+
+      max-width: 360px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 20px auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .crossPage {
+    .items {
+      flex-wrap: wrap !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .rightBox {
+    grid-template-columns: 1fr !important;
+  }
+}

@@ -1,0 +1,300 @@
+.container {
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+.topnav {
+  background-color: #007878;
+
+  .first {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+
+    .leftSide {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      img {
+        padding: 12px 0;
+      }
+    }
+
+    .rightSide {
+      display: flex;
+      align-items: center;
+      padding: 12px 0;
+      gap: 18px;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
+
+header {
+  position: relative;
+  display: inline;
+  z-index: 10000;
+  background-color: white;
+}
+
+.centernav {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10000;
+
+  .centerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+    .login {
+      display: flex;
+      gap: 26px;
+      align-items: center;
+      justify-content: space-evenly;
+
+      div {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+      }
+
+      i {
+        display: none;
+      }
+    }
+
+    h1 {
+      font-weight: 700px;
+      font-size: 40px;
+      margin: 32px 0 35px 0;
+    }
+  }
+
+  .bar {
+    position: relative;
+    width: 504px;
+    height: 48px;
+
+    input {
+      width: 100%;
+      height: 100%;
+      background-color: #f7f9fc;
+      border: none;
+      padding: 10px;
+    }
+
+    .search {
+      position: absolute;
+      top: 30%;
+      left: 92%;
+    }
+  }
+
+  .centerBottom {
+    max-width: 100%;
+    display: flex;
+    gap: 54px;
+
+    a {
+      text-decoration: none;
+      color: #273142;
+      display: flex;
+      margin-bottom: 24px;
+      font-size: 16px;
+    }
+
+    .pages {
+      display: none;
+    }
+  }
+}
+
+.mainnav {
+  background-color: #ffe2e0;
+
+  .formain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1128px;
+    margin: 0 auto;
+
+    h3 {
+      display: inline-block;
+      color: #df4244;
+      font-size: 24px;
+    }
+
+    h2 {
+      display: inline-block;
+
+      color: #212121;
+      font-size: 40px;
+    }
+
+    p {
+      display: inline-block;
+
+      font-size: 16px;
+      color: #212121;
+      margin-top: 8px;
+    }
+
+    .rightTexts {
+      padding-top: 99px;
+      display: flex;
+
+      flex-direction: column;
+    }
+
+    button {
+      margin-top: 48px;
+      width: 192px;
+      height: 52px;
+      background-color: #206363;
+      color: white;
+      border-radius: 8px;
+      border: none;
+    }
+
+    .ellipse {
+      width: max-content;
+      height: max-content;
+
+      img {
+        margin-top: 128px;
+        padding-bottom: 47px;
+      }
+    }
+
+    .mainBg {
+      img {
+        padding-top: 24px;
+      }
+    }
+  }
+}
+
+.bottomnav {
+  background-color: #f7f7f7;
+
+  .forservices {
+    display: flex;
+
+    .servicess {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 47px;
+    }
+
+    .service {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        margin: 48px 10px 48px 0;
+        width: 48px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .topnav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .centerTop {
+    .bar {
+      input {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .centerTop {
+    .login {
+      div {
+        display: none !important;
+      }
+
+      i {
+        padding: 20px;
+        display: block !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .centerTop {
+    h1 {
+      padding: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .centerBottom {
+    a {
+      display: none !important;
+    }
+
+    .pages {
+      padding: 25px;
+      font-size: 25px;
+      display: block !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .mainnav {
+    .formain {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .rightTexts {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    .mainBg {
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .bottomnav {
+
+    .container {
+      .servicess {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}

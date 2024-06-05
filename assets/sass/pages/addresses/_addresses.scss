@@ -1,0 +1,122 @@
+.container{
+    max-width: 1128px;
+    margin: 0 auto;
+}
+.client{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 24px;
+   margin-bottom: 114px;
+     .leftbox{
+        border: 1px solid #E4E4E4;
+        border-radius: 8px;
+        height: 344px;
+        width: 264px;
+        margin-top: 32px;
+        display: grid;
+        
+       
+        div{
+            display:flex ;
+            gap: 15px;
+            
+           
+          
+           p{
+            font-size: 14px;
+           }
+           h6{
+            font-size: 16px;
+           }
+           
+        }
+        .clientdesc{
+            padding: 17px 0;
+            margin-left: 14px;
+        }
+        .info{
+            border-top: 1px solid #E4E4E4;
+            padding: 14px 0;
+            img{
+                margin-left: 24px;
+            }
+        }
+        .jake{
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+           
+        }
+       
+     }
+     .rightboxes{
+      margin-top: 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px;
+          .place{
+            border: 1px dashed #007878;
+            height: 309px;
+            width: 264px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #F9F9F9 ;
+            border-radius: 8px;
+          }
+          .descriptions{
+            border: 1px solid  #E4E4E4;
+            height: 309px;
+            width: 264px;
+            border-radius: 8px;
+            p{
+                font-size: 14px;
+                margin: 8px 0 16px 20px;
+            }
+            .name{
+                margin: 16px 0 16px 20px;
+                font-weight: bold;
+            }
+            .home{
+                display: flex;
+                justify-content: space-between;
+                padding: 12px 24px 12px 9px;
+                border-bottom: 1px solid  #E4E4E4;
+            }
+            .actions{
+                display: flex;
+                padding: 12px 24px 12px 9px;
+                justify-content: space-between;
+                margin-left: 20px;
+                
+               div{
+                display: flex;
+                border: 1px solid #E4E4E4;
+                align-items: center;
+                justify-content: center;
+                height: 36px;
+                border-radius: 8px;
+                p{
+                    margin: 5px;
+                }
+                img{
+                    margin-left: 5px;
+                }
+               } 
+            }
+          }
+     }
+}
+@media only screen and (max-width: 992px) {
+  .client{
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .rightboxes{
+        grid-template-columns:  1fr;
+    }
+  }
+    
+}
